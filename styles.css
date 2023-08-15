@@ -1,6 +1,6 @@
 body {
     background: rgb(190, 52, 85);
-    background: linear-gradient(280deg, rgb(190, 52, 85) 0%, rgb(20, 20, 20) 76%);
+    background: linear-gradient(285deg, rgb(52, 82, 111) 0%, rgb(20, 20, 20) 80%);
     margin: 0px;
 }
 
@@ -45,8 +45,8 @@ em {
     width: 100vw;
 
     background-image: radial-gradient(
-        rgba(255, 255, 255, 0.1) 2%,
-        transparent 5%
+        rgba(255, 255, 255, 0.1) 1%,
+        transparent 3%
     );
     background-position: 0% 0%;
     background-size: 12vmin 12vmin;
