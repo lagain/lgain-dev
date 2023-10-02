@@ -9,15 +9,6 @@
         <link rel="stylesheet" href="styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/dec3accff4.js" crossorigin="anonymous"></script>
-        <script>
-            fetch("https://isyvq245oc.execute-api.us-east-1.amazonaws.com/prod")
-                .then(response => response.json())
-                .then((data) => {
-                    var mycount = data.num
-                    mycount = document.getElementById("count").innerText
-                })
-        </script>
-
     </head>
 
     <body>
@@ -31,11 +22,12 @@
                 <a href="https://www.linkedin.com/in/lagain/" class="menu-item"><i class="fa-brands fa-linkedin" style="color: rgb(255, 255, 255);"></i><em> LinkedIn</em></a>
                 <a href="https://github.com/lagain" class="menu-item"><i class="fa-brands fa-github" style="color: rgb(255, 255, 255);"></i><em> GitHub</em></a>
                 <hr>
-                <a class="menu-item"><i class="fa-solid fa-earth-americas" style="color: rgb(255, 255, 255);"></i> Visitors: <span id="count"></span></a>
+                <a class="menu-item"><i class="fa-solid fa-earth-americas" style="color: rgb(255, 255, 255);"></i> Visitors: <span class="counter"></span></a>
             </div>
             <div id="menu-background-pattern"></div>
         </div>
 
+        <script src="./index.js"></script>
     </body>
 
 </html>
