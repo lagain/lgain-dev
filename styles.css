@@ -59,9 +59,6 @@ em {
     background-image: url("./greenhouse-bg.jpg");
     
     position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: 0;
 
     background-position: center 40%;
     background-size: 110vmax;
