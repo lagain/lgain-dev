@@ -66,8 +66,4 @@ em {
     background-position: center 40%;
     background-size: 110vmax;
     opacity: 0.15;
-
-    transition: opacity 800ms ease,
-        background-size 800ms ease,
-        background-position 800ms ease;
 }
