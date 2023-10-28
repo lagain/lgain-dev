@@ -1,2 +1,3 @@
 # ignore infra folder
-infra/terraform/
+infra/provider.tf
+infra/terraform.tfstate
