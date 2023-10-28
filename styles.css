@@ -51,3 +51,23 @@ em {
     background-position: 0% 0%;
     background-size: 12vmin 12vmin;
 }
+
+#menu-background-image {
+    height: 100%;
+    width: 100%;
+
+    background-image: url(greenhouse-bg.jpg);
+    
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 0;
+
+    background-position: center 40%;
+    background-size: 110vmax;
+    opacity: 0.15;
+
+    transition: opacity 800ms ease,
+        background-size 800ms ease,
+        background-position 800ms ease;
+}
