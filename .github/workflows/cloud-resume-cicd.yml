@@ -1,4 +1,4 @@
-name: Cloud Resume CI/CD
+name: Upload website to S3 and invalidate CloudFront cache
 
 on:
     push:
@@ -12,17 +12,20 @@ jobs:
             - name: Checkout Repo
               uses: actions/checkout@master
 
+            - name: Terraform Init
+              uses: hashicorp/terraform-github-actions/init@v0.4.0
+
+            - name: Terraform Validate
+              uses: hashicorp/terraform-github-actions/validate@v0.3.7
+
+            - name: Terraform Apply
+              uses: hashicorp/terraform-github-actions/apply@v0.4.0
+
             - name: Sync S3
               uses: jakejarvis/s3-sync-action@master
 
             - name: Invalidate CloudFront cache
               uses: chetan/invalidate-cloudfront-action@v2
-
-            - name: Cypress run
-              uses: cypress-io/github-action@v6
-              with:
-                build: npm run build
-                start: npm start
 
         env:
             AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
