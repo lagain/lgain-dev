@@ -8,7 +8,7 @@ resource "aws_lambda_function" "func" {
 }
 
 resource "aws_iam_role" "iam_for_lambda" {
-    name = "iam_for_lambda"
+    name = "iam_for_lambda_func"
 
     assume_role_policy = <<EOF
 {
