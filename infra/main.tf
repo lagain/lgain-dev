@@ -8,7 +8,7 @@ resource "aws_lambda_function" "func" {
 }
 
 resource "aws_iam_role" "iam_for_lambda" {
-    name = "iam_for_lambda_func"
+    name = "iam_for_lambda_1"
 
     assume_role_policy = <<EOF
 {
@@ -28,7 +28,7 @@ EOF
 }
 
 resource "aws_iam_policy" "iam_policy_cloud_resume" {
-  name = "aws_iam_policy_for_cloud_resume"
+  name = "aws_iam_policy_for_cloud_resume_1"
   path = "/"
   description = "AWS IAM Policy for cloud resume"
     policy = jsonencode(
