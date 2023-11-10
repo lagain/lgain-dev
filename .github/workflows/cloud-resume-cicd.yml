@@ -13,13 +13,10 @@ jobs:
               uses: actions/checkout@master
 
             - name: Terraform init
-              run: cd ./infra && terraform init
+              run: terraform init
 
             - name: Terraform validate
               run: terraform validate
-
-            - name: Terraform apply
-              run: terraform apply -auto-approve -input=false
 
             - name: Sync S3
               uses: jakejarvis/s3-sync-action@master
