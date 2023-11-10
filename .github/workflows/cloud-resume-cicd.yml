@@ -9,17 +9,17 @@ jobs:
     deploy:
         runs-on: ubuntu-latest
         steps:
-            - name: Checkout Repo
+            - name: Checkout repo
               uses: actions/checkout@master
 
-            - name: Terraform Init
-              uses: hashicorp/terraform-github-actions/init@v0.4.0
+            - name: Terraform init
+              run: terraform init
 
-            - name: Terraform Validate
-              uses: hashicorp/terraform-github-actions/validate@v0.3.7
+            - name: Terraform validate
+              run: terraform validate
 
-            - name: Terraform Apply
-              uses: hashicorp/terraform-github-actions/apply@v0.4.0
+            - name: Terraform apply
+              run: terraform apply -auto-approve -input=false
 
             - name: Sync S3
               uses: jakejarvis/s3-sync-action@master
