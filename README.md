@@ -2,7 +2,7 @@
 
 This is my personal website, built using AWS services as part of the [Cloud Resume Challenge](https://cloudresumechallenge.dev/docs/the-challenge/aws/), accessible at [lgain.dev](https://lgain.dev/).
 
-![image](./cloud-resume-diagram.png)
+![image](./resume-diagram.png)
 
 ### Architecture Overview
 <ul>
